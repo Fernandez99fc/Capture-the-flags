@@ -1,9 +1,9 @@
 
-**link: https://www.vulnhub.com/entry/kioptrix-level-12-3
+**link: https://www.vulnhub.com/entry/kioptrix-level-12-3**
 
-**name: kioptrix
+**name: kioptrix**
 
-**web application
+**web application**
 
 note: (phymyadmin is used for managing mysql database and should be protected or limited to authorized hosts.)
 
