@@ -5,7 +5,8 @@
 **difficulty**: medium
 
 **objective:**
-try to bypass my security measure on this site! http://165.227.106.113/header.php![VirtualBox_LINUX SERVER_17_04_2024_14_25_32](https://github.com/user-attachments/assets/1a57e353-9ecc-47bf-8f45-dd118ae6d6de)
+try to bypass my security measure on this site! http://165.227.106.113/header.php!
+![VirtualBox_LINUX SERVER_17_04_2024_14_25_32](https://github.com/user-attachments/assets/2c5ca1dc-a96b-49bf-a55f-64ea5fa2e06e)
 
 the first step is visiting the website http://165.227.106.113/header.php
 ![VirtualBox_LINUX SERVER_17_04_2024_14_29_04](https://github.com/user-attachments/assets/9be31138-0af5-4db9-8693-a49ad3ef7bcd)
