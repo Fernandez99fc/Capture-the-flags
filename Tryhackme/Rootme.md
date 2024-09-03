@@ -47,7 +47,15 @@ we can use gobuster to search for hidden file and directories:
 We can see a /panel directory which allows us to upload files. We can try to upload a malicious script to get a reverse shell.
 ![image](https://github.com/user-attachments/assets/bc1ff669-7749-40aa-8e03-aa4aca2f2f55)
 
-First thing that came to my mind was creating a payload with .html extension and uploading it to the  server.
+We can use msfvenom to generate a payload and output to a file:
+![Screenshot (150)](https://github.com/user-attachments/assets/f322adbc-d2e4-42c1-a573-da165823b9f8)
+
+set up listener using exploit/multi/handler module in metasploit:
+![Screenshot (151)](https://github.com/user-attachments/assets/776ec039-673b-4bf2-b5e8-de421eecce10)
+
+set the payload to "php/meterpreter/reverse_tcp" and the required options.
+
+
 
 
 
