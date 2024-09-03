@@ -67,8 +67,10 @@ Using a program having setuid bit, we can escalate privileges. Using the find co
 
 Type "shell" to enter a shell environment and type "export TERM=xterm".
 
-Using find:
+Using find to find setuid:
+![Screenshot (153)](https://github.com/user-attachments/assets/8ed44a6c-2a87-4d2f-ade4-3961cca2957f)
 
+/usr/bin/python seems to be the only one to work
 
 
 
