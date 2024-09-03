@@ -49,11 +49,25 @@ We can see a /panel directory which allows us to upload files. We can try to upl
 
 We can use msfvenom to generate a payload and output to a file:
 ![Screenshot (150)](https://github.com/user-attachments/assets/f322adbc-d2e4-42c1-a573-da165823b9f8)
+add .phtml extension to the file.
 
 set up listener using exploit/multi/handler module in metasploit:
 ![Screenshot (151)](https://github.com/user-attachments/assets/776ec039-673b-4bf2-b5e8-de421eecce10)
 
 set the payload to "php/meterpreter/reverse_tcp" and the required options.
+Type "run".
+
+Next, upload to the server and execute file in /uploads directory.
+We should have a shell.
+![Screenshot (152)](https://github.com/user-attachments/assets/3b160b4f-b6bc-4749-ac41-500468702bfb)
+
+<h2>Escalating Privilege to root!</h2>
+
+Using a program having setuid bit, we can escalate privileges. Using the find command to find files with the setuid bit set.
+
+Type "shell" to enter a shell environment and type "export TERM=xterm".
+
+Using find:
 
 
 
