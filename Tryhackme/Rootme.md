@@ -1,6 +1,7 @@
 <h1>RootMe!</h1>
 <b>Link: https://tryhackme.com/r/room/rrootme</b>
 
+
 ![Screenshot (134)](https://github.com/user-attachments/assets/70859579-a8b3-4992-b7db-9bd448f66076)
 
 Using nmap to scan for open ports:
