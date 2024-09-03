@@ -1,4 +1,4 @@
-![Screenshot (141)](https://github.com/user-attachments/assets/9179b8c9-c7f8-4a61-9970-2dcbd99343dc)<h1>RootMe!</h1>
+<h1>RootMe!</h1>
 <b>Link: https://tryhackme.com/r/room/rrootme</b>
 
 ![Screenshot (134)](https://github.com/user-attachments/assets/70859579-a8b3-4992-b7db-9bd448f66076)
