@@ -76,8 +76,11 @@ Using find to find setuid:
 
 In the python section, Under suid, we found the command <b>python -c 'import os; os.execl("/bin/sh", "sh", "-p")'</b> that we can use to escalate privilege to root.
 After executing the command we can type <b> whoami</b>  to confirm if we are actually root.
+![Screenshot (154)](https://github.com/user-attachments/assets/a4127573-3bac-4d05-bf7c-c0e1b74584ca)
 
+Find root.txt using "find / -type f -name root.txt 2> /dev/null"
 
+![Screenshot (155)](https://github.com/user-attachments/assets/4f3a6808-d6b1-4212-acc2-7ba6811204f5)
 
 
 
