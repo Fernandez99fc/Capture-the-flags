@@ -75,7 +75,7 @@ Using find to find setuid:
 <a href="https://gtfobins.github.io/gtfobins/python/">gtfobins.com</a> contains bunch of ways to exploit binaries on linux.
 
 In the python section, Under suid, we found the command <b>python -c 'import os; os.execl("/bin/sh", "sh", "-p")'</b> that we can use to escalate privilege to root.
-After executing the command we can type <b>whoami<b/> to confirm if we are actually root.
+After executing the command we can type <b>whoami <b/> to confirm if we are actually root.
 
 
 
