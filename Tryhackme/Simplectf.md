@@ -79,9 +79,7 @@ sudo vim -c ':!/bin/sh'
 
 Using "whoami" to see the user we are which is root, we can now read the content of the file root.txt:
 
-![Uploading Screenshot (216).png…]()
-
-
+![Screenshot (216)](https://github.com/user-attachments/assets/72721112-a265-4420-a530-e69cab8fe415)
 
 
 
