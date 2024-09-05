@@ -46,8 +46,11 @@ Then, use pip3 to install colored( a module).
 and same for cprint:
 ![Screenshot (208)](https://github.com/user-attachments/assets/df62ea33-6081-4594-a04d-e843fd78f796)
 
+We can start supply some options to the python script as seen below, then run it, which is going to perform an sqli
+![Screenshot (209)](https://github.com/user-attachments/assets/45e42373-4e07-4d37-aa3a-335bca00ae43)
 
-
+Injection Begins:
+![Screenshot (210)](https://github.com/user-attachments/assets/05523168-b1ae-4cc9-91e2-00ac288b2cde)
 
 
 
