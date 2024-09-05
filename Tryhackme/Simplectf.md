@@ -9,6 +9,9 @@ Scan for open ports using nmap:
 
 Ports 2222(ssh), 80(http) and 21(ftp) are open
 
+Tried to logged in as an anonymous user using ftp. It worked but there's nothing muuch to do ther:
+![Screenshot (198)](https://github.com/user-attachments/assets/d831b56c-7206-4918-9ce7-a2872b8e1e53)
+
 Visiting the http page, we see apache's default page:
 ![image](https://github.com/user-attachments/assets/9dff2dc2-cc68-4f8c-922a-d55acddef4a2)
 
@@ -20,11 +23,30 @@ Visiting /simple, we found a webpage:
 ![Screenshot (199)](https://github.com/user-attachments/assets/aea685f3-6aa2-4961-b3cd-4bcf5b216c87)
 We realized that the page runs on cmsmadesimple which is a type of content management system. A cms is a software that helps users to create, modify and manage contents on a website.
 
-We can check if cmsmadesimple has an exploit
+And we can see the version of cmsmadesimple to be v 2.2.8:
+![Screenshot (202)](https://github.com/user-attachments/assets/63b099f0-9382-458f-8646-fcc447a2e5da)
+
+we can check if cmsmadesimple has any exploit in metasploit or searchsploit:
+![Screenshot (203)](https://github.com/user-attachments/assets/d957489a-a5bb-4a8a-a435-b086d90eaf01)
+
+If we scroll down, we can see it is vulnerable to sql injection because the version is less that 2.2.10.
+![Screenshot (204)](https://github.com/user-attachments/assets/ed2ca842-4d5a-49d1-95a0-959d41afaf54)
+
+Download the exploit using <b>searchsploit -p 46635</b> to know the path to the exploit, then copy the exploit to our home directory.
+![Screenshot (205)](https://github.com/user-attachments/assets/8ad67741-9950-473a-ac52-f3f66e086112)
+
+It is a python file and we need to install some python modules to make it run.
+![Screenshot (206)](https://github.com/user-attachments/assets/cdec6b72-68f1-4bd6-89b9-ce8029336ef5)
+
+I have them installed already.
 
 
-Tried to logged in as an anonymous user using ftp. It worked but there's nothing muuch to do ther:
-![Screenshot (198)](https://github.com/user-attachments/assets/d831b56c-7206-4918-9ce7-a2872b8e1e53)
+
+
+
+
+
+
 
 
 
