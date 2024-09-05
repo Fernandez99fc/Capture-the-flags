@@ -77,9 +77,9 @@ There's a command to escalate privileges as root using sudo vim on <a href="http
 
 sudo vim -c ':!/bin/sh'
 
+Using "whoami" to see the user we are which is root, we can now read the content of the file root.txt:
 
-
-
+![Uploading Screenshot (216).png…]()
 
 
 
