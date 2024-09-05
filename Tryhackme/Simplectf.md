@@ -68,10 +68,18 @@ List the content of the file and cat to read:
 The other user on the system is "sunbath"
 ![Screenshot (213)](https://github.com/user-attachments/assets/afaf9cde-1565-43e7-b2a5-ee0c165fe98b)
 
-Using sudo -l to see commands we can run as root:
+Using sudo -l to see commands we can run as sudo without password:
 ![Screenshot (214)](https://github.com/user-attachments/assets/c3efa0aa-2bfa-4f32-8265-e5542fa0863f)
 
-sincee We can run vim as root, we can edit the /etc/sudoers file or edit the /etc/passwd to gain a shell(which is going to be a longer process).
+We can run vim without password prompt as sudo.
+
+There's a command to escalate privileges as root using sudo vim on <a href="https://gtfobins.github.io/gtfobins/vim">gtfobin.vim</a>
+
+sudo vim -c ':!/bin/sh'
+
+
+
+
 
 
 
