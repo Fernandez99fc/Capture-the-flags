@@ -53,6 +53,29 @@ Injection Begins:
 ![Screenshot (210)](https://github.com/user-attachments/assets/05523168-b1ae-4cc9-91e2-00ac288b2cde)
 
 
+After that, we found the password to be "secret". We will try to login to ssh on port 2222 with the username "mitch" and password "secret":
+![Screenshot (211)](https://github.com/user-attachments/assets/73e989d2-dbb8-45e3-86eb-77a42e3df2a2)
+
+<b>ssh mitch@ip p 2222</b>
+
+We are in!
+
+Use <b>python -c 'import os; os.system("/bin/bash")'</b> to break out of the restricted shell.
+
+List the content of the file and cat to read:
+![Screenshot (212)](https://github.com/user-attachments/assets/194eb91d-5314-4aa0-bcd2-a794e5987bde)
+
+The other user on the system is "sunbath"
+![Screenshot (213)](https://github.com/user-attachments/assets/afaf9cde-1565-43e7-b2a5-ee0c165fe98b)
+
+Using sudo -l to see commands we can run as root:
+![Screenshot (214)](https://github.com/user-attachments/assets/c3efa0aa-2bfa-4f32-8265-e5542fa0863f)
+
+sincee We can run vim as root, we can edit the /etc/sudoers file or edit the /etc/passwd to gain a shell(which is going to be a longer process).
+
+
+
+
 
 
 
