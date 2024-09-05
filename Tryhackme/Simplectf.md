@@ -40,6 +40,12 @@ It is a python file and we need to install some python modules to make it run.
 
 I have them installed already.
 
+Then, use pip3 to install colored( a module).
+![Screenshot (207)](https://github.com/user-attachments/assets/9ee64871-92df-42b2-af51-a593f4a10a7f)
+
+and same for cprint:
+![Screenshot (208)](https://github.com/user-attachments/assets/df62ea33-6081-4594-a04d-e843fd78f796)
+
 
 
 
