@@ -1,4 +1,4 @@
-![Screenshot (221)](https://github.com/user-attachments/assets/b9061f49-9ebb-42c3-a7b1-6d830e6ef17e)<h1>Jangow!</h1>
+<h1>Jangow!</h1>
 
 <b>Link:</b> https://www.vulnhub.com/entry/jangow-101,754/
 
