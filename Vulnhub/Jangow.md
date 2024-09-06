@@ -26,6 +26,15 @@ We see this page. We can see the version of apache to be 2.4.18.
 Visiting the /site directory, we see this webpage hosting a site called "grayscale"
 ![Screenshot (221)](https://github.com/user-attachments/assets/715c2ccc-3947-4047-862f-71ca5d2d054f)
 
+There might be some hidden files and directories. I'll be sticking with dirbuster to scan for files and directories. And i'm using ths because it can also perform a recursive search within subdirectories.
+![Screenshot (222)](https://github.com/user-attachments/assets/ad9e0bbb-70b4-44ad-a081-07cd7363b8bf)
+
+![Screenshot (223)](https://github.com/user-attachments/assets/dc73a5fa-f80f-4455-bef8-8b72a7fc0209)
+
+In the result section, we can see files and directories that have been successfully found having a status code of 200, 301 and 302.
+
+After the scan was completed, I generated a report:
+![Screenshot (225)](https://github.com/user-attachments/assets/f90a3340-3446-4e36-b4bb-d5a3f12cc36e)
 
 
 
