@@ -1,4 +1,4 @@
-<h1>Jangow!</h1>
+![Screenshot (234)](https://github.com/user-attachments/assets/5e3c22be-c1a5-4184-ac0d-e4c09ee9c1ee)<h1>Jangow!</h1>
 
 <b>Link:</b> https://www.vulnhub.com/entry/jangow-101,754/
 
@@ -51,6 +51,23 @@ I also tried using nikto to check for vulnerability but failed
 Revisiting the /site directory, we see a page called "buscar" by the top right, clicking that page or link, we see an equal to or "=" sign
 which is mostly likely vulnerable to <b>Command Injection</b>. Since we have an idea of the target Os, we can inject a linux command at the end of the equal to sign and see what it does. We can also use burpsuite to analyze this request.
 
+We can type ls at the back of "=" to list the content of the directory:
+![Screenshot (231)](https://github.com/user-attachments/assets/784c72da-a70f-4ae8-87c9-8b95c37fcd20)
+
+Using pwd to print working directory:
+![Screenshot (232)](https://github.com/user-attachments/assets/725ebadc-9c18-4ff1-a7c1-d1d4491c26b9)
+
+I would use burpsuite for a good looking format
+
+In burpsuite, I listed the files in the directory then, then listed the files in wordpress
+![Screenshot (233)](https://github.com/user-attachments/assets/9981086c-2e10-45d3-a084-ebb585d5c547)
+
+Found config.php file, we can read that too:
+![Screenshot (234)](https://github.com/user-attachments/assets/ba10eddf-714b-460c-809b-d2b2d1a0618d)
+
+And we can see some information such as username which is  desafio02 and password to be "abygurl69"
+
+To confirm with the user really exists, we can read the /etc/passwd file using burpsuite:
 
 
 
