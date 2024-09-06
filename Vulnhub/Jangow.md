@@ -1,4 +1,4 @@
-<h1>Jangow!</h1>
+![Screenshot (221)](https://github.com/user-attachments/assets/b9061f49-9ebb-42c3-a7b1-6d830e6ef17e)<h1>Jangow!</h1>
 
 <b>Link:</b> https://www.vulnhub.com/entry/jangow-101,754/
 
@@ -21,4 +21,12 @@ Just 2 ports open, which is ftp(port 21) and http(port 80) running apache web se
 No anonymous login for ftp. Next we visit the web server to see what it's running.
 
 ![Screenshot (220)](https://github.com/user-attachments/assets/6de217ae-a1b4-42fd-87d4-d49462e4e0b8)
-We see this page. 
+We see this page. We can see the version of apache to be 2.4.18. 
+
+Visiting the /site directory, we see this webpage hosting a site called "grayscale"
+![Screenshot (221)](https://github.com/user-attachments/assets/715c2ccc-3947-4047-862f-71ca5d2d054f)
+
+
+
+
+
