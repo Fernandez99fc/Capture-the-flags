@@ -36,6 +36,26 @@ In the result section, we can see files and directories that have been successfu
 After the scan was completed, I generated a report:
 ![Screenshot (225)](https://github.com/user-attachments/assets/f90a3340-3446-4e36-b4bb-d5a3f12cc36e)
 
+![Screenshot (226)](https://github.com/user-attachments/assets/1e150926-ccaf-4798-8087-4e3c429f52c2)
+
+After checking through the files and directories, we found "/site/wordpress/config.php":
+![Screenshot (227)](https://github.com/user-attachments/assets/dd0b03d1-8a0c-407a-8bca-b3fc386341e2)
+
+We see a username likely to be useful which is "desafio02".
+
+Tried bruteforcing ftp with the username but it failed.
+
+I also tried using nikto to check for vulnerability but failed
+![Screenshot (228)](https://github.com/user-attachments/assets/c6db10fd-93e7-4696-b645-9806bbad014f)
+
+Revisiting the /site directory, we see a page called "buscar" by the top right, clicking that page or link, we see an equal to or "=" sign
+which is mostly likely vulnerable to <b>Command Injection</b>. Since we have an idea of the target Os, we can inject a linux command at the end of the equal to sign and see what it does. We can also use burpsuite to analyze this request.
+
+
+
+
+
+
 
 
 
