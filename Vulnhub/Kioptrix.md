@@ -58,7 +58,7 @@ found a file in the directory , i'll read using cat.
 ![VirtualBox_LINUX SERVER_23_04_2024_22_48_07](https://github.com/user-attachments/assets/66c0e19e-7cf6-4e48-849e-438ae1d85c26)
 it is asking us to use the command "sudo ht". it throws up an error. i'll view the commands the user can run as root by running "sudo -l".
 ![VirtualBox_LINUX SERVER_23_04_2024_22_50_28](https://github.com/user-attachments/assets/309fb0b3-3c52-45a2-ab98-4920402d74d5)
-we can see the user is able to run /usr/bin/su and /usr/local/bin/ht as the root user. if we run "sudo ht" again, we will get the same error, we can resolve this by doing an "export term=xterm".
+we can see the user is not able to run /usr/bin/su but able to run /usr/local/bin/ht as the root user. if we run "sudo ht" again, we will get the same error, we can resolve this by doing an "export term=xterm".
 ![VirtualBox_LINUX SERVER_23_04_2024_22_56_33](https://github.com/user-attachments/assets/0c4639ac-0596-48ec-ad48-a2c2702794d5)
 
 ![VirtualBox_LINUX SERVER_23_04_2024_22_56_01](https://github.com/user-attachments/assets/7620c802-3130-4599-a440-00430c9c3a06)
