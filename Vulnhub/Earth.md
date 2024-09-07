@@ -5,7 +5,7 @@
 
 We,ve not started, we can have an idea of the kernel version and the linux distro to be fedora.
 
-</h2>b>Enumeration</b></h2>
+<h2><b> Enumeration </b></h2>
 
 
 
