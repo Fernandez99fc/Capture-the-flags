@@ -83,6 +83,18 @@ By changing directory to /home/jangow01, we are able to read the content of the 
 I logged in on the target machine with the same credentials
 ![Screenshot (238)](https://github.com/user-attachments/assets/5c4faa5d-c38c-45c6-8c4a-812fa4c08749)
 
+We can't use the find command to search for files because we cant make use of the front slash (/) and we are kind of limited. we can check if the kernel version is vulnerable using exploitdb, metasploit or searchsploit:
+![Screenshot (239)](https://github.com/user-attachments/assets/c7866742-786b-4802-b0ee-836cc682d3d4)
+
+We can see the kernel version is 4.4.0-31 generic running ubuntu. We can check if it's vulnerable:
+![Screenshot (240)](https://github.com/user-attachments/assets/c198f51c-8f99-459a-b092-dc7f92d68a03)
+
+We see there are few exploits for that version:
+
+We can use "searchsploit -p 47170 " to see the path to the exploit which is for Race condition privilege escalation and copy the exploit to our home directory:
+![Screenshot (242)](https://github.com/user-attachments/assets/6473aaf1-90a2-4b5b-950e-4cc0c56586aa)
+
+
 
 
 
