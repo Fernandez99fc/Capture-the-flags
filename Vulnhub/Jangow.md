@@ -83,7 +83,7 @@ By changing directory to /home/jangow01, we are able to read the content of the 
 I logged in on the target machine with the same credentials
 ![Screenshot (238)](https://github.com/user-attachments/assets/5c4faa5d-c38c-45c6-8c4a-812fa4c08749)
 
-We can't use the find command to search for files because we cant make use of the front slash (/) and we are kind of limited. we can check if the kernel version is vulnerable using exploitdb, metasploit or searchsploit:
+We can check if the kernel version is vulnerable using exploitdb, metasploit or searchsploit:
 ![Screenshot (239)](https://github.com/user-attachments/assets/c7866742-786b-4802-b0ee-836cc682d3d4)
 
 We can see the kernel version is 4.4.0-31 generic running ubuntu. We can check if it's vulnerable:
@@ -97,23 +97,23 @@ We can use "searchsploit -p 47170 " to see the path to the exploit which is for 
 First thing to do is to ready the head or content of the exploit to see how it works:
 ![Screenshot (243)](https://github.com/user-attachments/assets/d16ad1c4-fae3-46f7-aee8-3184d4475991)
 
-And we can see how it should be compiled using gcc.
-![Screenshot (244)](https://github.com/user-attachments/assets/d14e9334-8960-4f84-a6f9-1185fd4628a6)
-
-After comipiling, we can see the content of the exploit has been encoded. We can decide to upload the exploit via ftp. What if we didn't get access to ftp? Well, we can use also use  metasploit to get the job done.
-![Screenshot (245)](https://github.com/user-attachments/assets/c297a2f4-d2b5-4001-a500-92309fdb72e3)
-
-Using info 0 shows us information about  the exploit.
-![Screenshot (246)](https://github.com/user-attachments/assets/dbeda92c-042e-4ff0-9ada-d6593f13faed)
-
 I attempted using metasploit to exploit the kernel, then I realized it was a local privilege escalation and not remote code execution(RCE).
 
-Back to searchsploit, after compiling, we copy the compiled exploit to the system using ftp. So we login to ftp, then put the file..
+Login to ftp and copy the exploit to the /home/jangow01 using "put 47170.c"
+
+Then we compile withing that  environment using "gcc 47170.c -o 47170 -lpthread"
+
+The exploit requires the system to be allocated 2 logical processors, after that, run the exploit
+![Screenshot (248)](https://github.com/user-attachments/assets/9414d3ce-4577-47f6-b323-a812b64909ba)
+
+Luckily, we now a root shell!
+![Screenshot (249)](https://github.com/user-attachments/assets/aa8eb750-d610-49cf-841a-f2849213eef8)
+
+And finally!
+![Screenshot (250)](https://github.com/user-attachments/assets/7e71506d-4e69-46f6-a05b-3329b9153c37)
 
 
-
-
-
+<h1>Happy Hacking Folks!</h1>
 
 
 
