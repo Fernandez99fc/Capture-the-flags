@@ -7,6 +7,15 @@
 
 <h2><b> Enumeration </b></h2>
 
+Find ip address of the machine using arp-scan:
+![Screenshot (252)](https://github.com/user-attachments/assets/fcd96269-e97e-4126-931e-3cf529b52003)
+
+The ip address appears to be 192.168.1.6.
+
+Next is to scan for open ports using nmap:
+![Screenshot (253)](https://github.com/user-attachments/assets/7d11501c-9fd9-4b4b-95f1-7174e0b7a697)
+
+Port 22(ssh), 80(http) and 443(ssl/http) running apache web server are open. Good!
 
 
 
