@@ -68,6 +68,21 @@ Found config.php file, we can read that too:
 And we can see some information such as username which is  desafio02 and password to be "abygurl69"
 
 To confirm with the user really exists, we can read the /etc/passwd file using burpsuite:
+![Screenshot (235)](https://github.com/user-attachments/assets/db089e4f-9df4-4ea0-b33e-5ff3a51be92f)
+
+We can see the the real username for desadio02 is jangow01. we can try logging into ftp with those credentials
+
+username=jangow01 and password=abygurl69
+
+And we are in!
+![Screenshot (236)](https://github.com/user-attachments/assets/b2b8f28d-f6ad-431f-8410-1196db51fd8c)
+
+By changing directory to /home/jangow01, we are able to read the content of the file "user.txt"
+![Screenshot (237)](https://github.com/user-attachments/assets/44d00fe5-8915-4dc3-b951-e3529436ec7b)
+
+I logged in on the target machine with the same credentials
+![Screenshot (238)](https://github.com/user-attachments/assets/5c4faa5d-c38c-45c6-8c4a-812fa4c08749)
+
 
 
 
