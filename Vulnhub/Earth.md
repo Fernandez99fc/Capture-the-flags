@@ -30,7 +30,20 @@ Stating that the browser sent a request that the server could not understand bec
 So I will type https://192.168.1.6
 ![Screenshot (256)](https://github.com/user-attachments/assets/2e74e373-a503-4495-9029-db09b92efbd9)
 
-Here we are at the web page and we can see the content of the page.
+Here we are at the web page and we can see the content of the page and there's pretty much nothing to do here.
+
+In the previous  nmap scan, we could some names(earth.local, terratest.earth.local) in the ssl certificate on port 443 which could be a domain. I would add that to /etc/hosts alongside  the ip address to be resolved to.
+![Screenshot (253)](https://github.com/user-attachments/assets/7d11501c-9fd9-4b4b-95f1-7174e0b7a697)
+![Screenshot (258)](https://github.com/user-attachments/assets/8f8c7db2-abab-48d2-9375-def59dfd01f9)
+
+When we type in "earth.local" in the browser, we see the earth image:
+![Screenshot (259)](https://github.com/user-attachments/assets/f6e04e56-ab68-42b6-9d57-504ee6940ecc)
+
+And if we scroll down, we see this:
+![Screenshot (260)](https://github.com/user-attachments/assets/86916cd3-6f83-412b-8993-dca119735dca)
+
+
+
 
 
 
