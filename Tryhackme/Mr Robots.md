@@ -1,4 +1,4 @@
-![Screenshot (315)](https://github.com/user-attachments/assets/8d3dbfaa-f1ab-4dee-8694-82b2cea1b153)<h2>Mr Robots </h2>
+<h2>Mr Robots </h2>
 
 ![Screenshot (292)](https://github.com/user-attachments/assets/054ff140-ca69-4698-996f-a4d5a4c20d8e)
 
@@ -61,9 +61,17 @@ When we scroll down, we see some encoded texts. Turns out to be in base64
 We can use <a href="https://gchq.github.io/CyberChef">Cyberchef</a> to decode that:
 ![Screenshot (300)](https://github.com/user-attachments/assets/59399077-8563-4053-9e56-53000736619a)
 
-After decoding, we get a username "ELLIOT" and password "ER28-0652".
+After decoding, we get a username "elliot" and password "ER28-0652".
 
 We now have a possible username and password. We can try to login to the previous /login page we found.
+![Screenshot (316)](https://github.com/user-attachments/assets/c3deec1f-cec6-41c1-b915-eb27a5882fe0)
+We are logged in successfully.
+
+By selecting users, We can see elliot is an admin:
+![Screenshot (317)](https://github.com/user-attachments/assets/64f264ca-479e-4e59-a527-35b3d0082f61)
+
+
+
 
 
 
