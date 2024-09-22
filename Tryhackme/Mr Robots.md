@@ -1,4 +1,4 @@
-![Screenshot (307)](https://github.com/user-attachments/assets/c4aa6c13-c07c-4d19-994d-d3cbff6a9c7e)<h2>Mr Robots </h2>
+![Screenshot (315)](https://github.com/user-attachments/assets/8d3dbfaa-f1ab-4dee-8694-82b2cea1b153)<h2>Mr Robots </h2>
 
 ![Screenshot (292)](https://github.com/user-attachments/assets/054ff140-ca69-4698-996f-a4d5a4c20d8e)
 
@@ -39,10 +39,27 @@ We found some restricted pages including a file that looks like a key file. We c
 ![Screenshot (310)](https://github.com/user-attachments/assets/df9d270f-3721-4c39-bc4e-77c08b771d8e)
 
 We got the first key out 3!
+![Screenshot (311)](https://github.com/user-attachments/assets/fcf7fbdd-00de-4eb9-aa60-ecd7052b1364)
+
+We have 2 more keys to retrieve.
+
+One of the restricted pages we found in the /robots page is the <b>fsocity.dic</b> file. We get to download the the dictionary file when we visit the page.
+![Screenshot (312)](https://github.com/user-attachments/assets/2242682e-21ff-4ad0-8491-12e205fdf500)
+Now we have a wordlist.
+
+Found /login page among the file found with gobuster. It resolves to /wp-login.php page when visited.
+![Screenshot (313)](https://github.com/user-attachments/assets/a0d933b1-ffb2-4880-9999-be1fb60e8f31)
+
+We have no login information for that.
+
+/license page was among the discovered pages with gobuster. When we visit, we see some texts:
+![Screenshot (314)](https://github.com/user-attachments/assets/af46856e-65b8-419f-8d74-86fe34f51133)
+
+When we scroll down, we see some encoded texts:
+![Screenshot (315)](https://github.com/user-attachments/assets/43c45640-0341-41b6-93bc-ef7caffdb57b)
+
+We can use <a href="https://gchq.github.io/CyberChef">Cyberchef</a> to decode that:
 
 
-  
 
 
-
-  
