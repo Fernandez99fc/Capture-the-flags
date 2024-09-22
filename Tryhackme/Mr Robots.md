@@ -70,6 +70,32 @@ We are logged in successfully.
 By selecting users, We can see elliot is an admin:
 ![Screenshot (317)](https://github.com/user-attachments/assets/64f264ca-479e-4e59-a527-35b3d0082f61)
 
+While exploring, we found an editor page which we can use to leverage command injection.
+![Screenshot (323)](https://github.com/user-attachments/assets/06d3a7ff-eaef-4691-897d-0af97d5ed533)
+
+Next, I created a php payload with msfvenom:
+![Screenshot (320)](https://github.com/user-attachments/assets/e6a66b9d-d8ac-487f-9b60-f7f67451b0af)
+
+I selected the 404.php file(or any .php extension) by the right, cleared all texts in it and pasted my msfvenom payload to spawn a reverse shell.
+![Screenshot (322)](https://github.com/user-attachments/assets/fe1eff43-3bad-4d17-b756-769f3e046dbb)
+
+Next, I clicked on update file. 
+
+I setup up my listener using the multi handler module in metasploit and set the required parameters.
+![Screenshot (319)](https://github.com/user-attachments/assets/a0df070a-f9c3-4efa-872d-ea21e8157d11)
+
+To execute the code, I visited the page 10.2.26.122/404.php
+![Screenshot (324)](https://github.com/user-attachments/assets/4ef2fb30-0aeb-49d9-9446-98c048ed5efc)
+
+We should now have a shell
+![Screenshot (321)](https://github.com/user-attachments/assets/05f63ac8-dd62-4331-ad6a-b88757f2aecb)
+
+
+
+
+
+
+
 
 
 
