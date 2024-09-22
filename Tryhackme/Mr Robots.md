@@ -97,7 +97,29 @@ Then type "TERM=xterm"
 Use the command in the text to break out of a restricted environment:
 ![Screenshot (327)](https://github.com/user-attachments/assets/0e5951cc-c4f7-4d82-bd9c-3a8ec29deee1)
 
+Here in /hom/robot directory, we can see some files:
+![Screenshot (329)](https://github.com/user-attachments/assets/bf393ff0-c7cf-4216-8028-a690a811bb2c)
 
+We have permission to read the content of the password file.
+
+We can try cracking the hash with either crackstation, john or hashcat to crack the hash. We can just paste the hash in crackstation.
+![Screenshot (330)](https://github.com/user-attachments/assets/21a50339-fec1-43a3-b598-a0ee707146f7)
+
+Password robot user appears to a-z.
+
+We will switch user as robot with the password we have.
+![Screenshot (331)](https://github.com/user-attachments/assets/639e57af-f27b-41f7-b61d-e667f69012f2)
+We now have our second key!
+
+We can now escalate privilege using a setuid binary. Using the find commandm we were able to find some suid binaries and after playing around, nmap turns out to be the one to leverage:
+![Screenshot (332)](https://github.com/user-attachments/assets/8656d41d-1c03-4790-84dd-e87b7f3c34ca)
+
+Run "nmap --interactive"
+![Screenshot (333)](https://github.com/user-attachments/assets/3e541f61-9430-4869-a26a-ce64bcfe8da7)
+
+Then "!sh" to spawn a shell and we should be logged in as root. Next, is to read the content of the third key present in the root's directory
+
+<h1>Happy Hacking!</h1>
 
 
 
