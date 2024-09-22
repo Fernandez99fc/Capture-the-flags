@@ -90,6 +90,13 @@ To execute the code, I visited the page 10.2.26.122/404.php
 We should now have a shell
 ![Screenshot (321)](https://github.com/user-attachments/assets/05f63ac8-dd62-4331-ad6a-b88757f2aecb)
 
+Type "shell" to enter an interactive shell. This allows to run more commands and system commands.
+![Screenshot (326)](https://github.com/user-attachments/assets/f104ee71-b0d9-41e6-b878-6135823fbdf8)
+Then type "TERM=xterm"
+
+Use the command in the text to break out of a restricted environment:
+![Screenshot (327)](https://github.com/user-attachments/assets/0e5951cc-c4f7-4d82-bd9c-3a8ec29deee1)
+
 
 
 
