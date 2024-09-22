@@ -55,10 +55,15 @@ We have no login information for that.
 /license page was among the discovered pages with gobuster. When we visit, we see some texts:
 ![Screenshot (314)](https://github.com/user-attachments/assets/af46856e-65b8-419f-8d74-86fe34f51133)
 
-When we scroll down, we see some encoded texts:
+When we scroll down, we see some encoded texts. Turns out to be in base64
 ![Screenshot (315)](https://github.com/user-attachments/assets/43c45640-0341-41b6-93bc-ef7caffdb57b)
 
 We can use <a href="https://gchq.github.io/CyberChef">Cyberchef</a> to decode that:
+![Screenshot (300)](https://github.com/user-attachments/assets/59399077-8563-4053-9e56-53000736619a)
+
+After decoding, we get a username "ELLIOT" and password "ER28-0652".
+
+We now have a possible username and password. We can try to login to the previous /login page we found.
 
 
 
